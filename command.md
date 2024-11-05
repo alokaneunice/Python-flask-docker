@@ -6,9 +6,8 @@
  pip freeze >> <requirements.txt>
  # command to remove images
  docker rmi <imageid>
- # command to remove all images
-  docker system prune
-  ls -lart   
+ # command to remove all images and containers
+  docker system prune   
 # To build docker image
 # Mkae sure you have created your docker file
 # Mkae sure your docker dexktop is up and running
@@ -23,17 +22,9 @@
  # powerful ones
  $ docker image prune --all --force
  $ docker rmi -f $(docker images -aq)
-# To build docker container image
- To build docker container image
- $ docker run -dp 5004:5004 eunicmage
- $ bb0b75a1d3161ed96649fe7cf1b83b0a047def89b1c24892583913a46a2a34f6
-
 # To check the list of containers
  $ docker ps
-
-# To remove unused all images and containers
-docker system prune
-# to create a container
+# to create a container or build docker container
 docker run -dp <5004:5004> <diamondimage> 
 # to list container 
 docker ps
