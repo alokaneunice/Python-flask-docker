@@ -26,8 +26,10 @@
  $ docker ps
 # to create a container or build docker container
 docker run -dp <5004:5004> <diamondimage> 
-# to list container 
-docker ps
+# to list container that is both running or not running 
+docker ps -a
 # To remove containers 
 docker rm -vf $(docker ps -a -q)
-# 
+# to stop a running container
+docker stop containername
+#
