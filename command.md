@@ -15,7 +15,7 @@
  $ docker images
  $ docker images -a
 # Comand to build your image
- docker build -t eunicmage 
+ docker build -t eunicmage .
 # Apply force to delete 1st, 2nd, 3rd, 4th
  $ docker images purge
  $ docker images prune
