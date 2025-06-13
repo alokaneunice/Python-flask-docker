@@ -15,7 +15,7 @@
  $ docker images
  $ docker images -a
 # Comand to build your image
- docker build -t eunicmage .
+ docker build -t engrvic/flask-project .
 # Apply force to delete 1st, 2nd, 3rd, 4th
  $ docker images purge
  $ docker images prune
@@ -32,4 +32,5 @@ docker ps -a
 docker rm -vf $(docker ps -a -q)
 # to stop a running container
 docker stop containername
-#
+# To push your docker images to dockerhub
+docker push engrvic/flask-project
